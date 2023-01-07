@@ -1,3 +1,6 @@
+:root {
+  --orange: #f15b22;
+}
 /* Universally applied */
 
 * {
@@ -7,14 +10,16 @@
 }
 
 .banner-container {
-  background-image: url("/images/banner/banner2.png");
+  background-image: url(../images/banner/banner2.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 15% 10% 15% 65%;
   text-align: right;
-  /* craetes issue when i add these 2values */
-  /* height: 100vh;
-  max-width: 100%; */
+  position: relative;
+}
+
+.banner {
+  height: 100%;
 }
 
 .banner-tittle {
@@ -32,12 +37,160 @@
   line-height: 26px;
   text-align: right;
 }
-.btn-primary {
+.btn-orange {
   font-size: 1rem;
   font-weight: 600;
   padding: 20px 25px;
-  background: #f15b22;
+  background: #f15d22;
   color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+/* Main section */
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 35px;
+}
+
+section.about {
+  display: flex;
+  margin-top: 100px;
+}
+.img-related-text .tittle {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 47px;
+  color: #151414;
+}
+.img-related-text .sub-tittle {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #151414;
+  margin-bottom: 30px;
+}
+.img-text .about-description {
+  color: #444343;
+  margin: 1.1rem 0;
+}
+
+.img-related-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 150px 100px;
+}
+
+.list-item .item {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.list-item .item i {
+  color: #16d887;
+  margin-right: 8px;
+}
+
+/* Planning section */
+
+section.my-plans {
+  display: flex;
+  margin: 60px 0;
+  margin-bottom: 150px;
+}
+
+section .my-plans-item {
+  display: flex;
+  text-align: center;
+  gap: 12.4%;
+  margin-top: 60px;
+}
+
+.my-plans .plan-tittle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.item .to-do {
+  font-size: 25px;
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.item h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #737272;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* footer section */
+
+.footer-container {
+  background: #151414;
+  padding: 6% 10%;
+  display: flex;
+}
+.footer-left {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.tittle {
+  font-weight: 700;
+  font-size: 40px;
+  /* line-height: 48px; */
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer-left .description {
+  max-width: 50%;
+}
+
+.contact-information {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.social-icons img {
+  width: 45px;
+  height: 45px;
+  padding: 15px;
+}
+.subscribe-section {
+  padding: auto 900px;
+}
+
+.subscribe-section h3 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+input[type="email"] {
+  background: transparent;
+  color: white;
+  padding: 20px 80px 25px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+}
+
+.btn-white {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 25px;
+  background: #ffffff;
+  color: #f15d22;
   border: none;
   border-radius: 5px;
   margin-top: 30px;
