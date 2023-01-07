@@ -1,0 +1,45 @@
+/* Universally applied */
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-container {
+  background-image: url("/images/banner/banner2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15% 10% 15% 65%;
+  text-align: right;
+  /* craetes issue when i add these 2values */
+  /* height: 100vh;
+  max-width: 100%; */
+}
+
+.banner-tittle {
+  font-weight: 700;
+  font-size: 4rem;
+  /* 1 rem = 16px */
+  text-align: right;
+  color: #151414;
+  margin-bottom: 25px;
+}
+.banner-description {
+  color: #444343;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  text-align: right;
+}
+.btn-primary {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  background: #f15b22;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
