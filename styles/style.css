@@ -1,13 +1,15 @@
 :root {
   --orange: #f15b22;
+  --dark: #202020;
 }
-/* Universally applied */
 
 * {
   font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
+
+/* banner section */
 
 .banner-container {
   background-image: url(../images/banner/banner2.png);
@@ -16,6 +18,8 @@
   padding: 15% 10% 15% 65%;
   text-align: right;
   position: relative;
+  max-width: 100vw;
+  max-height: 100%;
 }
 
 .banner {
@@ -37,8 +41,10 @@
   line-height: 26px;
   text-align: right;
 }
+/* button #f15d22 */
 .btn-orange {
   font-size: 1rem;
+  text-decoration: none;
   font-weight: 600;
   padding: 20px 25px;
   background: #f15d22;
@@ -55,10 +61,12 @@ main {
   max-width: 1200px;
   padding: 0 35px;
 }
-
+/* about person's failure section */
 section.about {
   display: flex;
-  margin-top: 100px;
+  margin-top: 130px;
+  justify-content: center;
+  align-items: center;
 }
 .img-related-text .tittle {
   font-weight: 700;
@@ -99,19 +107,25 @@ section.about {
 section.my-plans {
   display: flex;
   margin: 60px 0;
-  margin-bottom: 150px;
+  margin-top: 100px;
+}
+/* This tittle not going at the middle, I can't figure it out*/
+
+section.my-plans .tittle {
+  font-weight: 700;
+  font-size: 2rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: #151414;
+  margin-top: 50px;
 }
 
 section .my-plans-item {
   display: flex;
   text-align: center;
-  gap: 12.4%;
-  margin-top: 60px;
-}
-
-.my-plans .plan-tittle {
-  text-align: center;
-  margin-bottom: 50px;
+  gap: 130px;
+  margin-top: 120px;
 }
 
 .item .to-do {
@@ -121,19 +135,40 @@ section .my-plans-item {
   justify-content: center;
 }
 
-.item h4 {
+.item .to-achieve {
   font-size: 18px;
   font-weight: 500;
   color: #737272;
   margin-top: 8px;
   text-align: center;
 }
+/* Call now section */
+.call-now {
+  background-image: linear-gradient(
+      to right,
+      #f15b22 0%,
+      rgba(241, 91, 34, 0) 100%
+    ),
+    url("/images/gradient1.png"), url(/images/watch.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 35px;
+  text-align: left;
+  border-radius: 8px;
+  margin: 130px 0;
+  position: relative;
+}
+.call-now .tagline {
+  font-weight: 700;
+  font-size: 35px;
+  color: #ffffff;
+}
 
 /* footer section */
 
 .footer-container {
   background: #151414;
-  padding: 6% 10%;
+  padding: 80px 180px;
   display: flex;
 }
 .footer-left {
@@ -153,6 +188,7 @@ section .my-plans-item {
 
 .footer-left .description {
   max-width: 50%;
+  color: #ffffff;
 }
 
 .contact-information {
@@ -161,8 +197,6 @@ section .my-plans-item {
 }
 
 .social-icons img {
-  width: 45px;
-  height: 45px;
   padding: 15px;
 }
 .subscribe-section {
@@ -173,17 +207,19 @@ section .my-plans-item {
   color: #ffffff;
   font-weight: 600;
   font-size: 25px;
+  /* line-height: normal; */
   margin-bottom: 30px;
 }
 
 input[type="email"] {
-  background: transparent;
+  background: black;
   color: white;
   padding: 20px 80px 25px 30px;
   border: 1px solid #ffffff;
   border-radius: 6px;
 }
 
+/* buttons white*/
 .btn-white {
   font-size: 18px;
   text-decoration: none;
