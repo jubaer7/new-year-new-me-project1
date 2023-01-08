@@ -148,16 +148,17 @@ section .my-plans-item {
       #f15b22 0%,
       rgba(241, 91, 34, 0) 100%
     ),
-    url("/images/gradient1.png"), url(/images/watch.png);
-  background-repeat: no-repeat;
+    url(/images/gradient2.png), url(/images/watch.png);
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 60px 35px;
   text-align: left;
   border-radius: 8px;
   margin: 130px 0;
   position: relative;
+  color: #ffffff;
 }
-.call-now .tagline {
+*/ .call-now .tagline {
   font-weight: 700;
   font-size: 35px;
   color: #ffffff;
